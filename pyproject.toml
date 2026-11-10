@@ -16,18 +16,19 @@ classifiers = [
     
 ]
 dependencies = [
-    "ipython",
-    "jupyterlab",
+    "ipykernel",
+    "jupyter",
     "matplotlib",
-    "notebook",
     "numpy",
     "pandas",
-    "pip",
-    "python-dotenv",
-    "ruff",
-    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "statsmodels",
 ]
 requires-python = "~=3.12.0"
+
+[project.optional-dependencies]
+dev = ["ruff"]
 
 
 [tool.ruff]
